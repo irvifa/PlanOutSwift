@@ -1,42 +1,17 @@
-#
-# Be sure to run `pod lib lint PlanOutSwift.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
-Pod::Spec.new do |s|
-  s.name             = 'PlanOutSwift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of PlanOutSwift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/Irvi Firqotul Aini/PlanOutSwift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Irvi Firqotul Aini' => 'irvi.fa@gmail.com' }
-  s.source           = { :git => 'https://github.com/Irvi Firqotul Aini/PlanOutSwift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'PlanOutSwift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PlanOutSwift' => ['PlanOutSwift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+Pod::Spec.new do |spec|
+  spec.name         = "PlanOutSwift"
+  spec.version      = "0.1.4"
+  spec.summary      = "PlanOut interpreter implementation in Swift."
+  spec.description  = <<-DESC
+    A Swift implementation of PlanOut interpreter, for Swift or Objective-C backed front-ends. The implementation (tries to) follow standards defined by the Python implementation of PlanOut interpreter and also its Java implementation (planout4j).
+                   DESC
+  spec.homepage     = "https://github.com/irvifa/PlanOutSwift"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.authors            = {
+    "Irvi Aini" => "irvi.fa@gmail.com"
+  }
+  spec.platform       = :ios, "10.0"
+  spec.swift_version  = "5.0"
+  spec.source       = { :git => "git@github.com:irvifa/PlanOutSwift.git", :tag => "#{spec.version}" }
+  spec.source_files  = "Source/**/*.swift"
 end

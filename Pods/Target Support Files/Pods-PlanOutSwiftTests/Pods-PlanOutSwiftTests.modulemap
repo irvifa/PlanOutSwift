@@ -1,0 +1,6 @@
+module Pods_PlanOutSwiftTests {
+  umbrella header "Pods-PlanOutSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

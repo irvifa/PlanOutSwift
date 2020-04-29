@@ -1,0 +1,22 @@
+{
+  "name": "PlanOutSwift",
+  "version": "0.1.0",
+  "summary": "A short description of PlanOutSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Irvi Firqotul Aini/PlanOutSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Irvi Firqotul Aini": "irvi.fa@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Irvi Firqotul Aini/PlanOutSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PlanOutSwift/Classes/**/*"
+}
