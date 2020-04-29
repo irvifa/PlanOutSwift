@@ -26,6 +26,16 @@
 		7A97EB782459EBA900019A81 /* RandomOpAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB772459EBA900019A81 /* RandomOpAssertions.swift */; };
 		7A97EB7A2459EBC900019A81 /* InterpreterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB792459EBC900019A81 /* InterpreterSpec.swift */; };
 		7A97EB7C2459EBFB00019A81 /* NamespaceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB7B2459EBFB00019A81 /* NamespaceSpec.swift */; };
+		7A97EB822459ECD800019A81 /* CoalesceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB812459ECD800019A81 /* CoalesceSpec.swift */; };
+		7A97EB842459ECFA00019A81 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB832459ECFA00019A81 /* ArraySpec.swift */; };
+		7A97EB862459ED1400019A81 /* ReturnSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB852459ED1400019A81 /* ReturnSpec.swift */; };
+		7A97EB882459ED3000019A81 /* AndSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB872459ED3000019A81 /* AndSpec.swift */; };
+		7A97EB8A2459ED4B00019A81 /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB892459ED4B00019A81 /* OrSpec.swift */; };
+		7A97EB8C2459ED6400019A81 /* ConditionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB8B2459ED6400019A81 /* ConditionSpec.swift */; };
+		7A97EB8E2459ED8300019A81 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB8D2459ED8300019A81 /* SequenceSpec.swift */; };
+		7A97EB902459ED9A00019A81 /* GetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB8F2459ED9A00019A81 /* GetSpec.swift */; };
+		7A97EB922459EDB800019A81 /* SetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB912459EDB800019A81 /* SetSpec.swift */; };
+		7A97EB942459EDD500019A81 /* LiteralOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */; };
 		FE343E7F231D29E20017E047 /* NamespaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE343E7E231D29E20017E047 /* NamespaceError.swift */; };
 		FEDAAEDD2306C5E700D0733E /* PlanOutSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAAED32306C5E700D0733E /* PlanOutSwift.framework */; };
 		FEDAAEE42306C5E700D0733E /* PlanOutSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDAAED62306C5E700D0733E /* PlanOutSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,6 +121,16 @@
 		7A97EB792459EBC900019A81 /* InterpreterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterSpec.swift; sourceTree = "<group>"; };
 		7A97EB7B2459EBFB00019A81 /* NamespaceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceSpec.swift; sourceTree = "<group>"; };
 		7A97EB7D2459EC3D00019A81 /* PlanOutSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanOutSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A97EB812459ECD800019A81 /* CoalesceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalesceSpec.swift; sourceTree = "<group>"; };
+		7A97EB832459ECFA00019A81 /* ArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
+		7A97EB852459ED1400019A81 /* ReturnSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnSpec.swift; sourceTree = "<group>"; };
+		7A97EB872459ED3000019A81 /* AndSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndSpec.swift; sourceTree = "<group>"; };
+		7A97EB892459ED4B00019A81 /* OrSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
+		7A97EB8B2459ED6400019A81 /* ConditionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionSpec.swift; sourceTree = "<group>"; };
+		7A97EB8D2459ED8300019A81 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
+		7A97EB8F2459ED9A00019A81 /* GetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpec.swift; sourceTree = "<group>"; };
+		7A97EB912459EDB800019A81 /* SetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSpec.swift; sourceTree = "<group>"; };
+		7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralOperationSpec.swift; sourceTree = "<group>"; };
 		9122D07F062241AB54EEBF51 /* libPods-PlanOutSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanOutSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3BCBDA3E49C9BF5ABAEA2 /* Pods-PlanOutSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F963FD62205E1C103EC8034A /* Pods-PlanOutSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +268,31 @@
 			path = Matchers;
 			sourceTree = "<group>";
 		};
+		7A97EB7F2459ECB100019A81 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB802459ECC800019A81 /* Base */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		7A97EB802459ECC800019A81 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB812459ECD800019A81 /* CoalesceSpec.swift */,
+				7A97EB832459ECFA00019A81 /* ArraySpec.swift */,
+				7A97EB852459ED1400019A81 /* ReturnSpec.swift */,
+				7A97EB872459ED3000019A81 /* AndSpec.swift */,
+				7A97EB892459ED4B00019A81 /* OrSpec.swift */,
+				7A97EB8B2459ED6400019A81 /* ConditionSpec.swift */,
+				7A97EB8D2459ED8300019A81 /* SequenceSpec.swift */,
+				7A97EB8F2459ED9A00019A81 /* GetSpec.swift */,
+				7A97EB912459EDB800019A81 /* SetSpec.swift */,
+				7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FEDAAEC92306C5E700D0733E = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +332,7 @@
 		FEDAAEE02306C5E700D0733E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7A97EB7F2459ECB100019A81 /* Operator */,
 				7A97EB6A2459EAA400019A81 /* Helpers */,
 				7A97EB552459E88C00019A81 /* Stubs */,
 				7A97EB512459E81D00019A81 /* UnitSpec.swift */,
@@ -584,9 +630,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A97EB762459EB8B00019A81 /* SharedBehavior.swift in Sources */,
+				7A97EB902459ED9A00019A81 /* GetSpec.swift in Sources */,
+				7A97EB822459ECD800019A81 /* CoalesceSpec.swift in Sources */,
 				7A97EB672459EA2B00019A81 /* ExposureLogSpec.swift in Sources */,
 				7A97EB692459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift in Sources */,
 				7A97EB7C2459EBFB00019A81 /* NamespaceSpec.swift in Sources */,
+				7A97EB8E2459ED8300019A81 /* SequenceSpec.swift in Sources */,
+				7A97EB842459ECFA00019A81 /* ArraySpec.swift in Sources */,
+				7A97EB8C2459ED6400019A81 /* ConditionSpec.swift in Sources */,
+				7A97EB862459ED1400019A81 /* ReturnSpec.swift in Sources */,
+				7A97EB8A2459ED4B00019A81 /* OrSpec.swift in Sources */,
 				7A97EB742459EB6B00019A81 /* LiteralMatchers.swift in Sources */,
 				7A97EB6C2459EAC500019A81 /* StubReader.swift in Sources */,
 				7A97EB712459EB3600019A81 /* AccessibleMockContext.swift in Sources */,
@@ -594,7 +647,10 @@
 				7A97EB7A2459EBC900019A81 /* InterpreterSpec.swift in Sources */,
 				7A97EB632459E9C200019A81 /* ExperimentSpec.swift in Sources */,
 				7A97EB782459EBA900019A81 /* RandomOpAssertions.swift in Sources */,
+				7A97EB942459EDD500019A81 /* LiteralOperationSpec.swift in Sources */,
 				7A97EB652459E9E700019A81 /* ExperimentDefinitionSpec.swift in Sources */,
+				7A97EB922459EDB800019A81 /* SetSpec.swift in Sources */,
+				7A97EB882459ED3000019A81 /* AndSpec.swift in Sources */,
 				7A97EB6F2459EB1D00019A81 /* SimpleMockContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
