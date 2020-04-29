@@ -1,6 +1,6 @@
 # PlanOutSwift
 
-[![CI Status](https://img.shields.io/travis/Irvi Firqotul Aini/PlanOutSwift.svg?style=flat)](https://travis-ci.org/Irvi Firqotul Aini/PlanOutSwift)
+[![CI Status](https://img.shields.io/travis/irvifa/PlanOutSwift.svg?style=flat)](https://travis-ci.org/irvifa/PlanOutSwift)
 [![Version](https://img.shields.io/cocoapods/v/PlanOutSwift.svg?style=flat)](https://cocoapods.org/pods/PlanOutSwift)
 [![License](https://img.shields.io/cocoapods/l/PlanOutSwift.svg?style=flat)](https://cocoapods.org/pods/PlanOutSwift)
 [![Platform](https://img.shields.io/cocoapods/p/PlanOutSwift.svg?style=flat)](https://cocoapods.org/pods/PlanOutSwift)
