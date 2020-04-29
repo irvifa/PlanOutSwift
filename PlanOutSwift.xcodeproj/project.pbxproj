@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		44BADF83E96DC85A646CDC41 /* libPods-PlanOutSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9122D07F062241AB54EEBF51 /* libPods-PlanOutSwiftTests.a */; };
 		7A97EB0E2459A39A00019A81 /* PlanOutSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A97EB0D2459A39A00019A81 /* PlanOutSwift.h */; };
+		7A97EB522459E81D00019A81 /* UnitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB512459E81D00019A81 /* UnitSpec.swift */; };
+		7A97EB572459E8BB00019A81 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A97EB562459E8BB00019A81 /* sample.json */; };
+		7A97EB5B2459E8F000019A81 /* simple-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A97EB5A2459E8F000019A81 /* simple-0.json */; };
+		7A97EB5D2459E90000019A81 /* simple-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A97EB5C2459E90000019A81 /* simple-1.json */; };
+		7A97EB5F2459E91000019A81 /* equality.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A97EB5E2459E91000019A81 /* equality.json */; };
+		7A97EB632459E9C200019A81 /* ExperimentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB622459E9C200019A81 /* ExperimentSpec.swift */; };
+		7A97EB652459E9E700019A81 /* ExperimentDefinitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB642459E9E700019A81 /* ExperimentDefinitionSpec.swift */; };
+		7A97EB672459EA2B00019A81 /* ExposureLogSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB662459EA2B00019A81 /* ExposureLogSpec.swift */; };
+		7A97EB692459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB682459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift */; };
+		7A97EB6C2459EAC500019A81 /* StubReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB6B2459EAC500019A81 /* StubReader.swift */; };
+		7A97EB6F2459EB1D00019A81 /* SimpleMockContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB6E2459EB1D00019A81 /* SimpleMockContext.swift */; };
+		7A97EB712459EB3600019A81 /* AccessibleMockContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB702459EB3600019A81 /* AccessibleMockContext.swift */; };
+		7A97EB742459EB6B00019A81 /* LiteralMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB732459EB6B00019A81 /* LiteralMatchers.swift */; };
+		7A97EB762459EB8B00019A81 /* SharedBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB752459EB8B00019A81 /* SharedBehavior.swift */; };
+		7A97EB782459EBA900019A81 /* RandomOpAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB772459EBA900019A81 /* RandomOpAssertions.swift */; };
+		7A97EB7A2459EBC900019A81 /* InterpreterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB792459EBC900019A81 /* InterpreterSpec.swift */; };
+		7A97EB7C2459EBFB00019A81 /* NamespaceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB7B2459EBFB00019A81 /* NamespaceSpec.swift */; };
 		FE343E7F231D29E20017E047 /* NamespaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE343E7E231D29E20017E047 /* NamespaceError.swift */; };
 		FEDAAEDD2306C5E700D0733E /* PlanOutSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAAED32306C5E700D0733E /* PlanOutSwift.framework */; };
 		FEDAAEE42306C5E700D0733E /* PlanOutSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDAAED62306C5E700D0733E /* PlanOutSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +93,24 @@
 
 /* Begin PBXFileReference section */
 		7A97EB0D2459A39A00019A81 /* PlanOutSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanOutSwift.h; sourceTree = "<group>"; };
+		7A97EB512459E81D00019A81 /* UnitSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSpec.swift; sourceTree = "<group>"; };
+		7A97EB562459E8BB00019A81 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		7A97EB5A2459E8F000019A81 /* simple-0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "simple-0.json"; sourceTree = "<group>"; };
+		7A97EB5C2459E90000019A81 /* simple-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "simple-1.json"; sourceTree = "<group>"; };
+		7A97EB5E2459E91000019A81 /* equality.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = equality.json; sourceTree = "<group>"; };
+		7A97EB622459E9C200019A81 /* ExperimentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentSpec.swift; sourceTree = "<group>"; };
+		7A97EB642459E9E700019A81 /* ExperimentDefinitionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentDefinitionSpec.swift; sourceTree = "<group>"; };
+		7A97EB662459EA2B00019A81 /* ExposureLogSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureLogSpec.swift; sourceTree = "<group>"; };
+		7A97EB682459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSegmentAllocatorSpec.swift; sourceTree = "<group>"; };
+		7A97EB6B2459EAC500019A81 /* StubReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubReader.swift; sourceTree = "<group>"; };
+		7A97EB6E2459EB1D00019A81 /* SimpleMockContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMockContext.swift; sourceTree = "<group>"; };
+		7A97EB702459EB3600019A81 /* AccessibleMockContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleMockContext.swift; sourceTree = "<group>"; };
+		7A97EB732459EB6B00019A81 /* LiteralMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralMatchers.swift; sourceTree = "<group>"; };
+		7A97EB752459EB8B00019A81 /* SharedBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedBehavior.swift; sourceTree = "<group>"; };
+		7A97EB772459EBA900019A81 /* RandomOpAssertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOpAssertions.swift; sourceTree = "<group>"; };
+		7A97EB792459EBC900019A81 /* InterpreterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterSpec.swift; sourceTree = "<group>"; };
+		7A97EB7B2459EBFB00019A81 /* NamespaceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceSpec.swift; sourceTree = "<group>"; };
+		7A97EB7D2459EC3D00019A81 /* PlanOutSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanOutSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9122D07F062241AB54EEBF51 /* libPods-PlanOutSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanOutSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3BCBDA3E49C9BF5ABAEA2 /* Pods-PlanOutSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F963FD62205E1C103EC8034A /* Pods-PlanOutSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +208,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A97EB552459E88C00019A81 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB562459E8BB00019A81 /* sample.json */,
+				7A97EB5A2459E8F000019A81 /* simple-0.json */,
+				7A97EB5C2459E90000019A81 /* simple-1.json */,
+				7A97EB5E2459E91000019A81 /* equality.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		7A97EB6A2459EAA400019A81 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB722459EB4F00019A81 /* Matchers */,
+				7A97EB6D2459EB0300019A81 /* Mocks */,
+				7A97EB6B2459EAC500019A81 /* StubReader.swift */,
+				7A97EB752459EB8B00019A81 /* SharedBehavior.swift */,
+				7A97EB772459EBA900019A81 /* RandomOpAssertions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7A97EB6D2459EB0300019A81 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB6E2459EB1D00019A81 /* SimpleMockContext.swift */,
+				7A97EB702459EB3600019A81 /* AccessibleMockContext.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7A97EB722459EB4F00019A81 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB732459EB6B00019A81 /* LiteralMatchers.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
 		FEDAAEC92306C5E700D0733E = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +287,16 @@
 		FEDAAEE02306C5E700D0733E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7A97EB6A2459EAA400019A81 /* Helpers */,
+				7A97EB552459E88C00019A81 /* Stubs */,
+				7A97EB512459E81D00019A81 /* UnitSpec.swift */,
+				7A97EB622459E9C200019A81 /* ExperimentSpec.swift */,
+				7A97EB642459E9E700019A81 /* ExperimentDefinitionSpec.swift */,
+				7A97EB662459EA2B00019A81 /* ExposureLogSpec.swift */,
+				7A97EB682459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift */,
+				7A97EB792459EBC900019A81 /* InterpreterSpec.swift */,
+				7A97EB7B2459EBFB00019A81 /* NamespaceSpec.swift */,
+				7A97EB7D2459EC3D00019A81 /* PlanOutSwiftTests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -403,9 +488,9 @@
 			buildConfigurationList = FEDAAEEA2306C5E700D0733E /* Build configuration list for PBXNativeTarget "PlanOutSwiftTests" */;
 			buildPhases = (
 				DA41294E3B7715E688203E9C /* [CP] Check Pods Manifest.lock */,
-				FEDAAED82306C5E700D0733E /* Sources */,
 				FEDAAED92306C5E700D0733E /* Frameworks */,
 				FEDAAEDA2306C5E700D0733E /* Resources */,
+				7A97EB182459E66400019A81 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -423,6 +508,11 @@
 		FEDAAECA2306C5E700D0733E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				TargetAttributes = {
+					FEDAAEDB2306C5E700D0733E = {
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = FEDAAECD2306C5E700D0733E /* Build configuration list for PBXProject "PlanOutSwift" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -454,6 +544,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A97EB5B2459E8F000019A81 /* simple-0.json in Resources */,
+				7A97EB5D2459E90000019A81 /* simple-1.json in Resources */,
+				7A97EB572459E8BB00019A81 /* sample.json in Resources */,
+				7A97EB5F2459E91000019A81 /* equality.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +579,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A97EB182459E66400019A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A97EB762459EB8B00019A81 /* SharedBehavior.swift in Sources */,
+				7A97EB672459EA2B00019A81 /* ExposureLogSpec.swift in Sources */,
+				7A97EB692459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift in Sources */,
+				7A97EB7C2459EBFB00019A81 /* NamespaceSpec.swift in Sources */,
+				7A97EB742459EB6B00019A81 /* LiteralMatchers.swift in Sources */,
+				7A97EB6C2459EAC500019A81 /* StubReader.swift in Sources */,
+				7A97EB712459EB3600019A81 /* AccessibleMockContext.swift in Sources */,
+				7A97EB522459E81D00019A81 /* UnitSpec.swift in Sources */,
+				7A97EB7A2459EBC900019A81 /* InterpreterSpec.swift in Sources */,
+				7A97EB632459E9C200019A81 /* ExperimentSpec.swift in Sources */,
+				7A97EB782459EBA900019A81 /* RandomOpAssertions.swift in Sources */,
+				7A97EB652459E9E700019A81 /* ExperimentDefinitionSpec.swift in Sources */,
+				7A97EB6F2459EB1D00019A81 /* SimpleMockContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEDAAECF2306C5E700D0733E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,13 +654,6 @@
 				FEDAAF2D2306C7A100D0733E /* Unit.swift in Sources */,
 				FEDAAF362306C7A100D0733E /* Length.swift in Sources */,
 				FE343E7F231D29E20017E047 /* NamespaceError.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEDAAED82306C5E700D0733E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +852,7 @@
 			baseConfigurationReference = CCA3BCBDA3E49C9BF5ABAEA2 /* Pods-PlanOutSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -755,6 +863,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.PlanOutSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/PlanOutSwiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -765,6 +875,7 @@
 			baseConfigurationReference = F963FD62205E1C103EC8034A /* Pods-PlanOutSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -775,6 +886,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.PlanOutSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/PlanOutSwiftTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
