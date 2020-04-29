@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.authors            = {
     "Irvi Aini" => "irvi.fa@gmail.com"
   }
-  spec.platform       = :ios, "10.0"
+  spec.platform       = :ios, "9.3"
   spec.swift_version  = "5.0"
   spec.source       = { :git => "git@github.com:irvifa/PlanOutSwift.git", :tag => "#{spec.version}" }
   spec.source_files  = "Source/**/*.swift"
