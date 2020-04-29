@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7AB7475F24599B8F008A67DC /* NotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7475E24599B8F008A67DC /* NotSpec.swift */; };
 		BF805A5FC9384A8E63EFA00E /* libPods-PlanOutSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4927C0607FC51D1CB45181A0 /* libPods-PlanOutSwiftTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16F15F09E15F43CDD63BEFD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		21FBDD835A129D06C7857AAD /* PlanOutSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PlanOutSwift.podspec; path = ../PlanOutSwift.podspec; sourceTree = "<group>"; };
+		16F15F09E15F43CDD63BEFD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		21FBDD835A129D06C7857AAD /* PlanOutSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = PlanOutSwift.podspec; path = ../PlanOutSwift.podspec; sourceTree = "<group>"; };
 		4927C0607FC51D1CB45181A0 /* libPods-PlanOutSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanOutSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACE51AFB9204008FA782 /* PlanOutSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanOutSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* PlanOutSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PlanOutSwift_Tests.xctest; path = PlanOutSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		84A3D665B3DE1DA41455832C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7AB7475E24599B8F008A67DC /* NotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSpec.swift; sourceTree = "<group>"; };
+		84A3D665B3DE1DA41455832C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B1FE607C2895F3DDE8E3F2FE /* Pods-PlanOutSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PlanOutSwift_Tests/Pods-PlanOutSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD134B019E29F379DFCEF9CF /* Pods-PlanOutSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE258173257738140F12E517 /* Pods-PlanOutSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 				CE258173257738140F12E517 /* Pods-PlanOutSwiftTests.debug.xcconfig */,
 				CD134B019E29F379DFCEF9CF /* Pods-PlanOutSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				7AB7475E24599B8F008A67DC /* NotSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -134,10 +136,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -150,6 +148,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -203,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB7475F24599B8F008A67DC /* NotSpec.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

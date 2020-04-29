@@ -4,13 +4,6 @@
 
 
 extension PlanOutOperation {
-    /* Random experiment with two possible outcomes: "success" or "failure".
-     The "success" probability is configurable through the "p" value – which is short for "probability".
-     - Given `p=0.5`, this produces a randomization with 50% probability of getting "success" (e.g. coin toss).
-     - Given `p=0.166`, the trial is akin to a dice toss, where 6 equals to "success".
-
-     - seealso:
-     https://en.wikipedia.org/wiki/Bernoulli_trial
     final class BernoulliTrial: PlanOutOpRandom<Bool> {
         override func randomExecute() throws -> Bool? {
             guard let pValue = args[Keys.probability.rawValue],
