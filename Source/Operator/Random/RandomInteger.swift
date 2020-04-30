@@ -24,19 +24,19 @@ extension PlanOutOperation {
             return minInt + Int(try hash() % Int64(maxInt - minInt + 1))
         }
 
-        /// Convenience method that runs the operation with only the minimum required arguments.
-        ///
-        /// - Parameters:
-        ///   - minValue: Minimum integer value
-        ///   - maxValue: Maximum integer value
-        ///   - unit: The primary unit used for hashing
-        /// - Returns: Random integer based on hashed value
+        /* Convenience method that runs the operation with only the minimum required arguments.
+            - Parameter(s):
+                - minValue: Minimum integer value
+                - maxValue: Maximum integer value
+                - unit: The primary unit used for hashing
+            - Returns: Random integer based on hashed value
+        */
         static func quickEval(min minValue: Int, max maxValue: Int, unit: String) throws -> Int? {
             let args: [String: Any] = [
                 Keys.min.rawValue: minValue,
                 Keys.max.rawValue: maxValue,
                 Keys.unit.rawValue: unit,
-                Keys.salt.rawValue: "x" // uses arbitrary string as salt.
+                Keys.salt.rawValue: "x"
             ]
 
             let operation = self.init()

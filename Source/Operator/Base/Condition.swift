@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    /// Simple if-then operation. `then` value is returned if the `if` value evaluates to true.
+    // Simple if-then operation. `then` value is returned if the `if` value evaluates to true.
     final class Condition: PlanOutOp {
         func execute(_ args: [String : Any], _ context: PlanOutOpContext) throws -> Any? {
             guard let conditions = args[Keys.conditions.rawValue] as? [[String: Any]] else {

@@ -44,7 +44,7 @@ func distributionTester(_ builder: RandomOperatorBuilder,
                         numRuns: Int = 1000,
                         file: FileString = #file,
                         line: UInt = #line) {
-    // run N trials of op with input i
+    // Run N trials of op with input i
     var evaluated: [Any] = []
     for i in 0..<numRuns {
         evaluated.append( builder.execute(unit: String(i))! )
@@ -55,11 +55,11 @@ func distributionTester(_ builder: RandomOperatorBuilder,
         expectedDensities[String(describing: value)] = density
     }
 
-    // handle sample test specially, each trial outcome is a list
+    // Handle sample test specially, each trial outcome is a list
     var evaluatedList: [[Any]] = []
     if let _ = builder.op as? PlanOutOperation.Sample,
         let list = evaluated as? [[Any]] {
-        // convert list of size N of samples to 'draws' lists of size N (aka "zip")
+        // Convert list of size N of samples to 'draws' lists of size N (aka "zip")
         // they all should have the same distribution density
         list.forEach { values in
             var i = 0
@@ -76,7 +76,7 @@ func distributionTester(_ builder: RandomOperatorBuilder,
         evaluatedList = [evaluated]
     }
 
-    // test outcome frequencies against expected density.
+    // Test outcome frequencies against expected density.
     evaluatedList.forEach { assertProbs(values: $0, densities: expectedDensities, numRuns: numRuns, file: file, line: line) }
 }
 
@@ -86,7 +86,7 @@ func assertProbs(values: [Any], densities: [String: Any], numRuns: Int = 1000, f
     var hist: [String: Int] = [:]
     values.map { String(describing: $0) }.forEach { hist[$0] = (hist[$0] ?? 0) + 1 }
 
-    // do binomial test of proportions for each item
+    // Do binomial test of proportions for each item
     hist.forEach { key, value in
         assertProp(observedP: Double(value)/Double(numRuns),
                    expectedP: densities[key] as! Double,

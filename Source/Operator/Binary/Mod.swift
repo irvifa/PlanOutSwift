@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    // Modulo operation
+    // Modulo operation.
     final class Mod: PlanOutOpBinary {
         typealias ResultType = Double
 

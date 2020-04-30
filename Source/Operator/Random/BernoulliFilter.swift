@@ -18,17 +18,17 @@ extension PlanOutOperation {
                     throw OperationError.missingArgs(args: Keys.probability.rawValue, type: self)
             }
 
-            // ensure that the probability value falls between 0.0 - 1.0
+            // Ensure that the probability value falls between 0.0 - 1.0
             guard case (0...1.0) = probability else {
                 throw OperationError.invalidArgs(expected: "p should be between 0 - 1", got: "\(probability)")
             }
 
-            // based on the implementation in Python and planout4j, having nil or empty choices returns empty array instead of throwing and error.
+            // Based on the implementation in Python and planout4j, having nil or empty choices returns empty array instead of throwing and error.
             guard let choices = args[Keys.choices.rawValue] as? [Any], !choices.isEmpty else {
                 return []
             }
 
-            // filter the list of arrays based on bernoulli trial on each elements.
+            // Filter the list of arrays based on bernoulli trial on each elements.
             return try choices.filter { try getUniform(appendedUnit: $0) <= probability }
         }
     }

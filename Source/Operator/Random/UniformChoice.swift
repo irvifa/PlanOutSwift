@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    /// Deterministically make a random choice with uniform probability based on given unit.
+    // Deterministically make a random choice with uniform probability based on given unit.
     final class UniformChoice: PlanOutOpRandom<Any> {
         override func randomExecute() throws -> Any? {
             guard let choices = args[Keys.choices.rawValue] as? [Any], !choices.isEmpty else {

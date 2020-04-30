@@ -4,8 +4,9 @@
 
 
 extension PlanOutOperation {
-    /// returns value at index if it exists, or return nil otherwise.
-    /// works with both lists and dictionaries.
+    /* Return value at index if it exists, or return nil otherwise.
+        works with both lists and dictionaries.
+    */
     final class Index: PlanOutOpSimple {
         typealias ResultType = Any
 

@@ -3,7 +3,7 @@
 //  PlanOutSwift
 
 extension PlanOutOperation {
-    /// Return value from the given argument.
+    // Return value from the given argument.
     final class LiteralOperation: PlanOutOp {
         typealias ResultType = Any
 

@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    // Division operation
+    // Division operation.
     final class Divide: PlanOutOpBinary {
         typealias ResultType = Double
 

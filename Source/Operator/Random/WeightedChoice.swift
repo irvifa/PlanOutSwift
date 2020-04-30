@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    /// Deterministically make a random choice with weighted probability based on given unit.
+    // Deterministically make a random choice with weighted probability based on given unit.
     final class WeightedChoice: PlanOutOpRandom<Any> {
         override func randomExecute() throws -> Any? {
             // Following the implementation in Python and planout4j, nil or empty choices would only return nil instead of throwing an error.
@@ -14,7 +14,6 @@ extension PlanOutOperation {
                     return nil
             }
 
-            // map weight values to an array of Double.
             let weightValues: [Double] = weights.compactMap {
                 if case let Literal.number(value) = Literal($0) {
                     return value
@@ -22,7 +21,7 @@ extension PlanOutOperation {
                 return nil
             }
 
-            // ensure that after compactMap, weightValue still has the same count as choices.
+            // Ensure weightValue still has the same count as choices.
             // The number of elements between choices and weightValues *must* match, because they're index-based.
             guard choices.count == weightValues.count else {
                 throw OperationError.invalidArgs(expected: "choices.count == weights.count", got: "choices: \(choices.count), weights: \(weights.count)")
@@ -55,7 +54,7 @@ extension PlanOutOperation {
                 throw OperationError.unexpected("Invalid weight values: \(sumWeights)")
             }
 
-            // generate the deterministically-random number.
+            // Generate the deterministically-random number.
             // The minValue is always 0, because we are generating a range. Regardless of the scale of weights used as argument, the randomization should always start from 0, because the first choice will be mapped if the random value falls between 0.0 - first sumWeights.
             let randomValue: Double = try getUniform(minValue: 0.0, maxValue: maxWeight)
 
@@ -65,7 +64,6 @@ extension PlanOutOperation {
                 }
             }
 
-            // theoretically, this should not happen.
             throw OperationError.unexpected("Random value (\(randomValue)) out of sumWeights' range (\(minWeight)-\(maxWeight))")
         }
     }

@@ -14,7 +14,7 @@ enum Literal {
 
     case dictionary([String: Any?])
 
-    /// Other values that are not representable by literal types.
+    // Other values that are not representable by literal types.
     case nonLiteral
 
     init(_ value: Any) {
@@ -37,9 +37,9 @@ enum Literal {
     }
 
 
-    /// Private initializer to simplify nil value processing.
-    ///
-    /// - Parameter optionalValue: Optional value
+    /* Private initializer to simplify nil value processing.
+    - Parameter optionalValue: Optional value
+    */
     private init?(with optionalValue: Any?) {
         guard let someValue = optionalValue else {
             return nil
@@ -130,10 +130,10 @@ extension Literal: Encodable {
         case .boolean(let boolValue):
             try boolValue.encode(to: encoder)
         case .list(let arrayValue):
-            // transform to encodable array.
+            // Transform to encodable array.
             try arrayValue.map { Literal(with: $0) }.encode(to: encoder)
         case .dictionary(let dictionaryValue):
-            // transform to encodable dictionary.
+            // Transform to encodable dictionary.
             try dictionaryValue.mapValues { Literal(with: $0) }.encode(to: encoder)
         default:
             throw OperationError.unexpected("Cannot encode \(self)")

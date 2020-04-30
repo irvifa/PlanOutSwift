@@ -15,7 +15,7 @@ struct DefaultSegmentAllocator {
     private var allocationMap: [String: Set<Int>] = [:]
 
     /// Tracks how many segments are still available for allocation.
-    private lazy var availableSegmentPool: Set<Int> = {
+    private lazy var availableSegments: Set<Int> = {
         // create an array of containing index of elements 0 to <totalSegments, and convert it to Set structure.
         return Set((0..<totalSegments).map { $0 })
     }()
@@ -49,7 +49,7 @@ extension DefaultSegmentAllocator: SegmentAllocator {
     @discardableResult
     mutating func allocate(_ name: String, _ segmentCount: Int) throws -> [Int] {
         // get randomized segment values based on name parameter.
-        guard let segments = try sampler(Array(availableSegmentPool).sorted(), segmentCount, name) as? [Int] else {
+        guard let segments = try sampler(Array(availableSegments).sorted(), segmentCount, name) as? [Int] else {
             throw SegmentAllocationError.samplingError
         }
 
@@ -60,11 +60,11 @@ extension DefaultSegmentAllocator: SegmentAllocator {
     mutating func allocate(_ name: String, segments: [Int]) throws -> [Int] {
         if segments.count < 1 {
             throw SegmentAllocationError.invalid(segments.count)
-        } else if segments.count > availableSegmentPool.count {
-            throw SegmentAllocationError.outOfSegments(requested: segments.count, available: availableSegmentPool.count)
+        } else if segments.count > availableSegments.count {
+            throw SegmentAllocationError.outOfSegments(requested: segments.count, available: availableSegments.count)
         } else if allocationMap[name] != nil {
             throw SegmentAllocationError.duplicateIdentifier(name)
-        } else if !availableSegmentPool.isSuperset(of: segments) {
+        } else if !availableSegments.isSuperset(of: segments) {
             throw SegmentAllocationError.requestedSegmentsNotAvailable
         }
 
@@ -72,7 +72,7 @@ extension DefaultSegmentAllocator: SegmentAllocator {
         allocationMap[name] = Set(segments)
 
         // remove allocated segments from available segment pool.
-        availableSegmentPool.subtract(segments)
+        availableSegments.subtract(segments)
 
         return segments
     }
@@ -83,7 +83,7 @@ extension DefaultSegmentAllocator: SegmentAllocator {
         }
 
         // restore freed segments to the availableSegments.
-        availableSegmentPool.formUnion(allocatedSegments)
+        availableSegments.formUnion(allocatedSegments)
 
         // remove deallocated identifier from the segmentMap.
         allocationMap.removeValue(forKey: name)

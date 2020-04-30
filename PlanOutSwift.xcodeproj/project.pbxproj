@@ -36,6 +36,34 @@
 		7A97EB902459ED9A00019A81 /* GetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB8F2459ED9A00019A81 /* GetSpec.swift */; };
 		7A97EB922459EDB800019A81 /* SetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB912459EDB800019A81 /* SetSpec.swift */; };
 		7A97EB942459EDD500019A81 /* LiteralOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */; };
+		7A97EB972459FDB600019A81 /* NegativeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB962459FDB600019A81 /* NegativeSpec.swift */; };
+		7A97EB992459FDE300019A81 /* LengthSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB982459FDE300019A81 /* LengthSpec.swift */; };
+		7A97EB9B2459FDF900019A81 /* NotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB9A2459FDF900019A81 /* NotSpec.swift */; };
+		7A97EB9D2459FE0F00019A81 /* RoundSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB9C2459FE0F00019A81 /* RoundSpec.swift */; };
+		7A97EBA02459FE9C00019A81 /* IndexSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB9F2459FE9C00019A81 /* IndexSpec.swift */; };
+		7A97EBA22459FEB000019A81 /* MapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBA12459FEB000019A81 /* MapSpec.swift */; };
+		7A97EBA52459FF3700019A81 /* ModSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBA42459FF3700019A81 /* ModSpec.swift */; };
+		7A97EBA72459FF5000019A81 /* DivideSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBA62459FF5000019A81 /* DivideSpec.swift */; };
+		7A97EBAA245A006300019A81 /* PlanOutOpBinarySharedExamplesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBA9245A006300019A81 /* PlanOutOpBinarySharedExamplesConfiguration.swift */; };
+		7A97EBAC245A009800019A81 /* EqualsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBAB245A009800019A81 /* EqualsSpec.swift */; };
+		7A97EBAF245A012D00019A81 /* LessThanSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBAE245A012D00019A81 /* LessThanSpec.swift */; };
+		7A97EBB1245A014000019A81 /* LessThanOrEqualToSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBB0245A014000019A81 /* LessThanOrEqualToSpec.swift */; };
+		7A97EBB3245A015500019A81 /* GreaterThanSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBB2245A015500019A81 /* GreaterThanSpec.swift */; };
+		7A97EBB5245A016900019A81 /* GreaterThanOrEqualToSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBB4245A016900019A81 /* GreaterThanOrEqualToSpec.swift */; };
+		7A97EBB8245A01C900019A81 /* ProductSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBB7245A01C900019A81 /* ProductSpec.swift */; };
+		7A97EBBA245A01DC00019A81 /* SumSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBB9245A01DC00019A81 /* SumSpec.swift */; };
+		7A97EBBC245A01ED00019A81 /* MinSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBBB245A01ED00019A81 /* MinSpec.swift */; };
+		7A97EBBE245A020100019A81 /* MaxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBBD245A020100019A81 /* MaxSpec.swift */; };
+		7A97EBC0245A025000019A81 /* PlanOutOpCommutativeSharedExamplesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBBF245A025000019A81 /* PlanOutOpCommutativeSharedExamplesConfiguration.swift */; };
+		7A97EBC3245A02E300019A81 /* RandomFloatingPointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBC2245A02E300019A81 /* RandomFloatingPointSpec.swift */; };
+		7A97EBC5245A02FE00019A81 /* RandomIntegerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBC4245A02FE00019A81 /* RandomIntegerSpec.swift */; };
+		7A97EBC7245A032100019A81 /* BernoulliTrialSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBC6245A032100019A81 /* BernoulliTrialSpec.swift */; };
+		7A97EBC9245A033300019A81 /* BernoulliFilterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBC8245A033300019A81 /* BernoulliFilterSpec.swift */; };
+		7A97EBCB245A035500019A81 /* HashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBCA245A035500019A81 /* HashSpec.swift */; };
+		7A97EBCD245A037700019A81 /* SaltSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBCC245A037700019A81 /* SaltSpec.swift */; };
+		7A97EBCF245A038F00019A81 /* SampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBCE245A038F00019A81 /* SampleSpec.swift */; };
+		7A97EBD1245A03A400019A81 /* UniformChoiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBD0245A03A400019A81 /* UniformChoiceSpec.swift */; };
+		7A97EBD3245A03BC00019A81 /* WeightedChoiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EBD2245A03BC00019A81 /* WeightedChoiceSpec.swift */; };
 		FE343E7F231D29E20017E047 /* NamespaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE343E7E231D29E20017E047 /* NamespaceError.swift */; };
 		FEDAAEDD2306C5E700D0733E /* PlanOutSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAAED32306C5E700D0733E /* PlanOutSwift.framework */; };
 		FEDAAEE42306C5E700D0733E /* PlanOutSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDAAED62306C5E700D0733E /* PlanOutSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,6 +159,34 @@
 		7A97EB8F2459ED9A00019A81 /* GetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpec.swift; sourceTree = "<group>"; };
 		7A97EB912459EDB800019A81 /* SetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSpec.swift; sourceTree = "<group>"; };
 		7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralOperationSpec.swift; sourceTree = "<group>"; };
+		7A97EB962459FDB600019A81 /* NegativeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeSpec.swift; sourceTree = "<group>"; };
+		7A97EB982459FDE300019A81 /* LengthSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthSpec.swift; sourceTree = "<group>"; };
+		7A97EB9A2459FDF900019A81 /* NotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSpec.swift; sourceTree = "<group>"; };
+		7A97EB9C2459FE0F00019A81 /* RoundSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundSpec.swift; sourceTree = "<group>"; };
+		7A97EB9F2459FE9C00019A81 /* IndexSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexSpec.swift; sourceTree = "<group>"; };
+		7A97EBA12459FEB000019A81 /* MapSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSpec.swift; sourceTree = "<group>"; };
+		7A97EBA42459FF3700019A81 /* ModSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModSpec.swift; sourceTree = "<group>"; };
+		7A97EBA62459FF5000019A81 /* DivideSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideSpec.swift; sourceTree = "<group>"; };
+		7A97EBA9245A006300019A81 /* PlanOutOpBinarySharedExamplesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanOutOpBinarySharedExamplesConfiguration.swift; sourceTree = "<group>"; };
+		7A97EBAB245A009800019A81 /* EqualsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualsSpec.swift; sourceTree = "<group>"; };
+		7A97EBAE245A012D00019A81 /* LessThanSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessThanSpec.swift; sourceTree = "<group>"; };
+		7A97EBB0245A014000019A81 /* LessThanOrEqualToSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessThanOrEqualToSpec.swift; sourceTree = "<group>"; };
+		7A97EBB2245A015500019A81 /* GreaterThanSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterThanSpec.swift; sourceTree = "<group>"; };
+		7A97EBB4245A016900019A81 /* GreaterThanOrEqualToSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterThanOrEqualToSpec.swift; sourceTree = "<group>"; };
+		7A97EBB7245A01C900019A81 /* ProductSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSpec.swift; sourceTree = "<group>"; };
+		7A97EBB9245A01DC00019A81 /* SumSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumSpec.swift; sourceTree = "<group>"; };
+		7A97EBBB245A01ED00019A81 /* MinSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSpec.swift; sourceTree = "<group>"; };
+		7A97EBBD245A020100019A81 /* MaxSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxSpec.swift; sourceTree = "<group>"; };
+		7A97EBBF245A025000019A81 /* PlanOutOpCommutativeSharedExamplesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanOutOpCommutativeSharedExamplesConfiguration.swift; sourceTree = "<group>"; };
+		7A97EBC2245A02E300019A81 /* RandomFloatingPointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFloatingPointSpec.swift; sourceTree = "<group>"; };
+		7A97EBC4245A02FE00019A81 /* RandomIntegerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomIntegerSpec.swift; sourceTree = "<group>"; };
+		7A97EBC6245A032100019A81 /* BernoulliTrialSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BernoulliTrialSpec.swift; sourceTree = "<group>"; };
+		7A97EBC8245A033300019A81 /* BernoulliFilterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BernoulliFilterSpec.swift; sourceTree = "<group>"; };
+		7A97EBCA245A035500019A81 /* HashSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSpec.swift; sourceTree = "<group>"; };
+		7A97EBCC245A037700019A81 /* SaltSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltSpec.swift; sourceTree = "<group>"; };
+		7A97EBCE245A038F00019A81 /* SampleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSpec.swift; sourceTree = "<group>"; };
+		7A97EBD0245A03A400019A81 /* UniformChoiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformChoiceSpec.swift; sourceTree = "<group>"; };
+		7A97EBD2245A03BC00019A81 /* WeightedChoiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightedChoiceSpec.swift; sourceTree = "<group>"; };
 		9122D07F062241AB54EEBF51 /* libPods-PlanOutSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanOutSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3BCBDA3E49C9BF5ABAEA2 /* Pods-PlanOutSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F963FD62205E1C103EC8034A /* Pods-PlanOutSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanOutSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlanOutSwiftTests/Pods-PlanOutSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +327,13 @@
 		7A97EB7F2459ECB100019A81 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
+				7A97EBC1245A02D500019A81 /* Random */,
+				7A97EBB6245A01B500019A81 /* Commutative */,
+				7A97EBAD245A011300019A81 /* Comparison */,
+				7A97EBA8245A005400019A81 /* Shared */,
+				7A97EBA32459FF2500019A81 /* Binary */,
+				7A97EB9E2459FE8F00019A81 /* Simple */,
+				7A97EB952459FD9D00019A81 /* Unary */,
 				7A97EB802459ECC800019A81 /* Base */,
 			);
 			path = Operator;
@@ -291,6 +354,83 @@
 				7A97EB932459EDD500019A81 /* LiteralOperationSpec.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		7A97EB952459FD9D00019A81 /* Unary */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB962459FDB600019A81 /* NegativeSpec.swift */,
+				7A97EB982459FDE300019A81 /* LengthSpec.swift */,
+				7A97EB9A2459FDF900019A81 /* NotSpec.swift */,
+				7A97EB9C2459FE0F00019A81 /* RoundSpec.swift */,
+			);
+			path = Unary;
+			sourceTree = "<group>";
+		};
+		7A97EB9E2459FE8F00019A81 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EB9F2459FE9C00019A81 /* IndexSpec.swift */,
+				7A97EBA12459FEB000019A81 /* MapSpec.swift */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		7A97EBA32459FF2500019A81 /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EBA42459FF3700019A81 /* ModSpec.swift */,
+				7A97EBA62459FF5000019A81 /* DivideSpec.swift */,
+				7A97EBAB245A009800019A81 /* EqualsSpec.swift */,
+			);
+			path = Binary;
+			sourceTree = "<group>";
+		};
+		7A97EBA8245A005400019A81 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EBA9245A006300019A81 /* PlanOutOpBinarySharedExamplesConfiguration.swift */,
+				7A97EBBF245A025000019A81 /* PlanOutOpCommutativeSharedExamplesConfiguration.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7A97EBAD245A011300019A81 /* Comparison */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EBAE245A012D00019A81 /* LessThanSpec.swift */,
+				7A97EBB0245A014000019A81 /* LessThanOrEqualToSpec.swift */,
+				7A97EBB2245A015500019A81 /* GreaterThanSpec.swift */,
+				7A97EBB4245A016900019A81 /* GreaterThanOrEqualToSpec.swift */,
+			);
+			path = Comparison;
+			sourceTree = "<group>";
+		};
+		7A97EBB6245A01B500019A81 /* Commutative */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EBB7245A01C900019A81 /* ProductSpec.swift */,
+				7A97EBB9245A01DC00019A81 /* SumSpec.swift */,
+				7A97EBBB245A01ED00019A81 /* MinSpec.swift */,
+				7A97EBBD245A020100019A81 /* MaxSpec.swift */,
+			);
+			path = Commutative;
+			sourceTree = "<group>";
+		};
+		7A97EBC1245A02D500019A81 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				7A97EBC2245A02E300019A81 /* RandomFloatingPointSpec.swift */,
+				7A97EBC4245A02FE00019A81 /* RandomIntegerSpec.swift */,
+				7A97EBC6245A032100019A81 /* BernoulliTrialSpec.swift */,
+				7A97EBC8245A033300019A81 /* BernoulliFilterSpec.swift */,
+				7A97EBCA245A035500019A81 /* HashSpec.swift */,
+				7A97EBCC245A037700019A81 /* SaltSpec.swift */,
+				7A97EBCE245A038F00019A81 /* SampleSpec.swift */,
+				7A97EBD0245A03A400019A81 /* UniformChoiceSpec.swift */,
+				7A97EBD2245A03BC00019A81 /* WeightedChoiceSpec.swift */,
+			);
+			path = Random;
 			sourceTree = "<group>";
 		};
 		FEDAAEC92306C5E700D0733E = {
@@ -629,25 +769,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A97EBB1245A014000019A81 /* LessThanOrEqualToSpec.swift in Sources */,
 				7A97EB762459EB8B00019A81 /* SharedBehavior.swift in Sources */,
 				7A97EB902459ED9A00019A81 /* GetSpec.swift in Sources */,
 				7A97EB822459ECD800019A81 /* CoalesceSpec.swift in Sources */,
+				7A97EB972459FDB600019A81 /* NegativeSpec.swift in Sources */,
+				7A97EBAF245A012D00019A81 /* LessThanSpec.swift in Sources */,
+				7A97EBD3245A03BC00019A81 /* WeightedChoiceSpec.swift in Sources */,
 				7A97EB672459EA2B00019A81 /* ExposureLogSpec.swift in Sources */,
+				7A97EBAA245A006300019A81 /* PlanOutOpBinarySharedExamplesConfiguration.swift in Sources */,
+				7A97EBCD245A037700019A81 /* SaltSpec.swift in Sources */,
+				7A97EBC7245A032100019A81 /* BernoulliTrialSpec.swift in Sources */,
+				7A97EBAC245A009800019A81 /* EqualsSpec.swift in Sources */,
+				7A97EB9D2459FE0F00019A81 /* RoundSpec.swift in Sources */,
 				7A97EB692459EA5C00019A81 /* DefaultSegmentAllocatorSpec.swift in Sources */,
 				7A97EB7C2459EBFB00019A81 /* NamespaceSpec.swift in Sources */,
+				7A97EBB3245A015500019A81 /* GreaterThanSpec.swift in Sources */,
 				7A97EB8E2459ED8300019A81 /* SequenceSpec.swift in Sources */,
+				7A97EBBE245A020100019A81 /* MaxSpec.swift in Sources */,
 				7A97EB842459ECFA00019A81 /* ArraySpec.swift in Sources */,
+				7A97EBC3245A02E300019A81 /* RandomFloatingPointSpec.swift in Sources */,
 				7A97EB8C2459ED6400019A81 /* ConditionSpec.swift in Sources */,
+				7A97EBB8245A01C900019A81 /* ProductSpec.swift in Sources */,
 				7A97EB862459ED1400019A81 /* ReturnSpec.swift in Sources */,
 				7A97EB8A2459ED4B00019A81 /* OrSpec.swift in Sources */,
 				7A97EB742459EB6B00019A81 /* LiteralMatchers.swift in Sources */,
 				7A97EB6C2459EAC500019A81 /* StubReader.swift in Sources */,
+				7A97EBCB245A035500019A81 /* HashSpec.swift in Sources */,
 				7A97EB712459EB3600019A81 /* AccessibleMockContext.swift in Sources */,
+				7A97EBB5245A016900019A81 /* GreaterThanOrEqualToSpec.swift in Sources */,
+				7A97EBA22459FEB000019A81 /* MapSpec.swift in Sources */,
+				7A97EBA52459FF3700019A81 /* ModSpec.swift in Sources */,
+				7A97EBD1245A03A400019A81 /* UniformChoiceSpec.swift in Sources */,
 				7A97EB522459E81D00019A81 /* UnitSpec.swift in Sources */,
+				7A97EBA02459FE9C00019A81 /* IndexSpec.swift in Sources */,
+				7A97EB992459FDE300019A81 /* LengthSpec.swift in Sources */,
 				7A97EB7A2459EBC900019A81 /* InterpreterSpec.swift in Sources */,
+				7A97EBA72459FF5000019A81 /* DivideSpec.swift in Sources */,
+				7A97EBC5245A02FE00019A81 /* RandomIntegerSpec.swift in Sources */,
 				7A97EB632459E9C200019A81 /* ExperimentSpec.swift in Sources */,
+				7A97EBBC245A01ED00019A81 /* MinSpec.swift in Sources */,
 				7A97EB782459EBA900019A81 /* RandomOpAssertions.swift in Sources */,
+				7A97EB9B2459FDF900019A81 /* NotSpec.swift in Sources */,
 				7A97EB942459EDD500019A81 /* LiteralOperationSpec.swift in Sources */,
+				7A97EBC0245A025000019A81 /* PlanOutOpCommutativeSharedExamplesConfiguration.swift in Sources */,
+				7A97EBBA245A01DC00019A81 /* SumSpec.swift in Sources */,
+				7A97EBCF245A038F00019A81 /* SampleSpec.swift in Sources */,
+				7A97EBC9245A033300019A81 /* BernoulliFilterSpec.swift in Sources */,
 				7A97EB652459E9E700019A81 /* ExperimentDefinitionSpec.swift in Sources */,
 				7A97EB922459EDB800019A81 /* SetSpec.swift in Sources */,
 				7A97EB882459ED3000019A81 /* AndSpec.swift in Sources */,

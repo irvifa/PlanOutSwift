@@ -11,12 +11,12 @@ extension PlanOutOperation {
                     throw OperationError.missingArgs(args: Keys.probability.rawValue, type: self)
             }
 
-            // ensure that the probability value falls between 0.0 - 1.0
+            // Ensure that the probability value falls between 0.0 - 1.0.
             guard case (0...1.0) = probability else {
                 throw OperationError.invalidArgs(expected: "p should be between 0 - 1", got: "\(probability)")
             }
 
-            // checks whether the deterministic-randomly generated value between 0.0 - 1.0 is under or equal to p value.
+            // Checks whether the deterministic-randomly generated value between 0.0 - 1.0 is under or equal to p value.
             return try getUniform() <= probability
         }
     }

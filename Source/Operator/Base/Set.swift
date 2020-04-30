@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    /// Assign value to the provided context.
+    // Assign value to a provided context.
     final class Set: PlanOutOp {
         @discardableResult
         func execute(_ args: [String : Any], _ context: PlanOutOpContext) throws -> Any? {

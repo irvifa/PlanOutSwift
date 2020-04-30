@@ -9,7 +9,7 @@ import Foundation
 class PlanOutOpRandom<T>: PlanOutOpSimple {
     typealias ResultType = T
 
-    /// Used to calculate the random
+    // Used as a seed.
     private let longScale: Double = 0xFFFFFFFFFFFFFFF
 
     var context: PlanOutOpContext?
@@ -43,7 +43,7 @@ class PlanOutOpRandom<T>: PlanOutOpSimple {
             throw OperationError.missingArgs(args: PlanOutOperation.Keys.unit.rawValue, type: self)
         }
 
-        // set unit value for randomization.
+        // Set unit value for randomization.
         if let arrayUnitValue = unitValue as? [String] {
             self.unit = SaltProvider.generate(values: arrayUnitValue)
         } else if let stringUnitValue = unitValue as? String {
@@ -59,12 +59,12 @@ class PlanOutOpRandom<T>: PlanOutOpSimple {
     }
 
     func hash(appendedUnit: Any? = nil) throws -> Int64 {
-        // obtain salt
+        // Generate salt.
         guard let salt = self.salt else {
             throw OperationError.missingArgs(args: PlanOutOperation.Keys.salt.rawValue, type: self)
         }
 
-        // obtain unit
+        // Generate unit.
         guard var unitValue = self.unit else {
             throw OperationError.missingArgs(args: PlanOutOperation.Keys.unit.rawValue, type: self)
         }
@@ -73,9 +73,10 @@ class PlanOutOpRandom<T>: PlanOutOpSimple {
             unitValue = SaltProvider.generate(values: [unitValue, String(describing: appendedValue)])
         }
 
-        // compute hash value:
-        // - convert "<salt>.<unit>" to SHA1, and get the first 16 characters.
-        // - convert hashed hexadecimal string to integer value.
+        /* Compute hash value:
+            - convert "<salt>.<unit>" to SHA1, and get the first 16 characters.
+            - convert hashed hexadecimal string to integer value.
+        */
         let baseValue = SaltProvider.generate(values: [salt, unitValue])
         let hashValue = String(baseValue.sha1().prefix(15)) // take the first 15 characters of SHA1.
         guard let numericHash = Int64(hashValue, radix: 16) else {
@@ -99,10 +100,10 @@ class PlanOutOpRandom<T>: PlanOutOpSimple {
 // MARK: String SHA1 Extension
 
 extension String {
-    /// Converts string value to to sha1.
-    ///
-    /// - seealso:
-    /// https://stackoverflow.com/a/52120827
+    /* Converts string value to to sha1.
+        - see also:
+            https://stackoverflow.com/a/52120827
+    */
     func sha1() -> String {
         let data = Data(self.utf8)
         var digest = Data(count: Int(CC_SHA1_DIGEST_LENGTH))

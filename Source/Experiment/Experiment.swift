@@ -28,7 +28,7 @@ class Experiment {
     }
 
     /* Assigns unit to an experiment.
-     - Parameters:
+     - Parameter(s):
        - unit: The unit model to be assigned to.
        - logger: Exposure logger instance.
      - Throws: OperationError
@@ -57,7 +57,7 @@ class Experiment {
 
     The exposure will only be logged once per experiment assignment. It is also overridable depending on interpreter's assignment results; for example, if the evaluation throws an `OperationError.stop` with boolean flag set to `false`, this means that the exposure will never be logged for this unit.
 
-    - Parameters:
+    - Parameter(s):
        - logger: Object responsible for logging.
        - interpreter: The evaluated interpreter, which contains assigned parameters and inputs.
     */

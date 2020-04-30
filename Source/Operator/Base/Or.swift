@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    /// OR operator for multiple values.
+    // OR operator for multiple values.
     final class Or: PlanOutOp {
         func execute(_ args: [String : Any], _ context: PlanOutOpContext) throws -> Bool? {
             guard let values = args[Keys.values.rawValue] as? [Any] else {

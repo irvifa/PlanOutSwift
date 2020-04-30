@@ -4,9 +4,9 @@
 
 
 extension PlanOutOperation {
-    /// Pick random samples from given choices.
-    ///
-    /// By default, the choices will be randomized and returned; but if numDraws is specified, then it will pick the first N elements instead.
+    /* Pick random samples from given choices.
+        By default, the choices will be randomized and returned; but if numDraws is specified, then it will pick the first N elements instead.
+     */
     final class Sample: PlanOutOpRandom<[Any]> {
 
         override func randomExecute() throws -> [Any]? {
@@ -26,10 +26,11 @@ extension PlanOutOperation {
                 numDraws = choices.count
             }
 
-            // Perform Fischer-Yates shuffle.
-            // loop through the array in reversed fashion (index starting from count-1 and goes downwards).
-            // in each loop, generate a random number using the current index as appended unit, and apply modulo operator to constrain the random number to be between 0 - index. Then, swap the element located in index and random number.
-            // see also: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+            /* Perform Fischer-Yates shuffle.
+                Loop through the array in reversed fashion (index starting from count-1 and goes downwards).
+                For each loop, generate a random number using the current index as appended unit, and apply modulo operator to constrain the random number to be between 0 - index. Then, swap the element located in index and random number.
+                See also: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+            */
             var mutableChoices: [Any] = choices
             for (index, _) in mutableChoices.enumerated().reversed() {
                 let randomNumber = Int(try hash(appendedUnit: index) % Int64(index + 1))
@@ -40,13 +41,13 @@ extension PlanOutOperation {
             return Swift.Array(mutableChoices[0..<numDraws])
         }
 
-        /// Convenience method that runs the operation with only the minimum required arguments.
-        ///
-        /// - Parameters:
-        ///   - choices: An array of choices to draw from
-        ///   - draws: The number of times a choice should be made
-        ///   - unit: The primary unit used for hashing
-        /// - Returns: Returns an array of randomly selected choices based on hashed unit
+        /* Convenience method that runs the operation with only the minimum required arguments.
+            - Parameter(s):
+                - choices: An array of choices to draw from
+                - draws: The number of times a choice should be made
+                - unit: The primary unit used for hashing
+            - Returns: Returns an array of randomly selected choices based on hashed unit
+         */
         static func quickEval(choices: [Any], draws: Int, unit: String) throws -> [Any]? {
             let args: [String: Any] = [
                 Keys.choices.rawValue: choices,
@@ -58,5 +59,4 @@ extension PlanOutOperation {
             return try self.init().execute(args, Interpreter())
         }
     }
-
 }

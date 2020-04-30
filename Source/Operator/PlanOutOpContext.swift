@@ -36,7 +36,7 @@ public protocol PlanOutOpContext: ReadableAssignment {
     func evaluate(_ value: Any) throws -> Any?
 
     /* Registers a variable to the assignment.
-    - Parameters:
+    - Parameter(s):
       - name: The variable name
       - value: The variable value
      */

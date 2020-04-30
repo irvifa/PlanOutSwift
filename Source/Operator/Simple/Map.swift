@@ -4,7 +4,7 @@
 
 
 extension PlanOutOperation {
-    // returns a copy of a given dictionary.
+    // Return a copy of a given dictionary.
     final class Map: PlanOutOpSimple {
         typealias ResultType = [String: Any?]
 
