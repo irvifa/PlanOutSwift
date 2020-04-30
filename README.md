@@ -22,7 +22,7 @@ pod 'PlanOutSwift'
 
 ## Author
 
-Irvi Firqotul Aini, irvi.fa@gmail.com
+Irvi Aini, irvi.fa@gmail.com
 
 ## License
 

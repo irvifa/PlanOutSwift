@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   }
   spec.platform       = :ios, "9.3"
   spec.swift_version  = "5.0"
-  spec.source       = { :git => "git@github.com:irvifa/PlanOutSwift.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/irvifa/PlanOutSwift.git", :tag => 'v' + spec.version.to_s }
   spec.source_files  = "Source/**/*.swift"
 end
