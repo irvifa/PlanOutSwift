@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		44BADF83E96DC85A646CDC41 /* libPods-PlanOutSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9122D07F062241AB54EEBF51 /* libPods-PlanOutSwiftTests.a */; };
+		7A1B45FA24844987000A70EC /* Exp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B45F924844987000A70EC /* Exp.swift */; };
+		7A1B45FC248449E4000A70EC /* Sqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B45FB248449E4000A70EC /* Sqrt.swift */; };
+		7A1B45FF24844A7A000A70EC /* ExpSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B45FD24844A47000A70EC /* ExpSpec.swift */; };
+		7A1B460124844D88000A70EC /* SqrtSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B460024844D88000A70EC /* SqrtSpec.swift */; };
 		7A97EB0E2459A39A00019A81 /* PlanOutSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A97EB0D2459A39A00019A81 /* PlanOutSwift.h */; };
 		7A97EB522459E81D00019A81 /* UnitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97EB512459E81D00019A81 /* UnitSpec.swift */; };
 		7A97EB572459E8BB00019A81 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A97EB562459E8BB00019A81 /* sample.json */; };
@@ -130,6 +134,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A1B45F924844987000A70EC /* Exp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exp.swift; sourceTree = "<group>"; };
+		7A1B45FB248449E4000A70EC /* Sqrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sqrt.swift; sourceTree = "<group>"; };
+		7A1B45FD24844A47000A70EC /* ExpSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpSpec.swift; sourceTree = "<group>"; };
+		7A1B460024844D88000A70EC /* SqrtSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqrtSpec.swift; sourceTree = "<group>"; };
 		7A97EB0D2459A39A00019A81 /* PlanOutSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanOutSwift.h; sourceTree = "<group>"; };
 		7A97EB512459E81D00019A81 /* UnitSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSpec.swift; sourceTree = "<group>"; };
 		7A97EB562459E8BB00019A81 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
@@ -363,6 +371,8 @@
 				7A97EB982459FDE300019A81 /* LengthSpec.swift */,
 				7A97EB9A2459FDF900019A81 /* NotSpec.swift */,
 				7A97EB9C2459FE0F00019A81 /* RoundSpec.swift */,
+				7A1B45FD24844A47000A70EC /* ExpSpec.swift */,
+				7A1B460024844D88000A70EC /* SqrtSpec.swift */,
 			);
 			path = Unary;
 			sourceTree = "<group>";
@@ -552,6 +562,8 @@
 				FEDAAEFD2306C7A100D0733E /* Length.swift */,
 				FEDAAEFE2306C7A100D0733E /* Not.swift */,
 				FEDAAEFF2306C7A100D0733E /* Round.swift */,
+				7A1B45F924844987000A70EC /* Exp.swift */,
+				7A1B45FB248449E4000A70EC /* Sqrt.swift */,
 			);
 			path = Unary;
 			sourceTree = "<group>";
@@ -773,6 +785,8 @@
 				7A97EB762459EB8B00019A81 /* SharedBehavior.swift in Sources */,
 				7A97EB902459ED9A00019A81 /* GetSpec.swift in Sources */,
 				7A97EB822459ECD800019A81 /* CoalesceSpec.swift in Sources */,
+				7A1B460124844D88000A70EC /* SqrtSpec.swift in Sources */,
+				7A1B45FF24844A7A000A70EC /* ExpSpec.swift in Sources */,
 				7A97EB972459FDB600019A81 /* NegativeSpec.swift in Sources */,
 				7A97EBAF245A012D00019A81 /* LessThanSpec.swift in Sources */,
 				7A97EBD3245A03BC00019A81 /* WeightedChoiceSpec.swift in Sources */,
@@ -828,6 +842,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDAAF3A2306C7A100D0733E /* OperationError.swift in Sources */,
+				7A1B45FA24844987000A70EC /* Exp.swift in Sources */,
 				FEDAAF302306C7A100D0733E /* DefaultSegmentAllocator.swift in Sources */,
 				FEDAAF552306C7A100D0733E /* Sequence.swift in Sources */,
 				FEDAAF4B2306C7A100D0733E /* BernoulliFilter.swift in Sources */,
@@ -877,6 +892,7 @@
 				FEDAAF3E2306C7A100D0733E /* PlanOutOpSimple.swift in Sources */,
 				FEDAAF2D2306C7A100D0733E /* Unit.swift in Sources */,
 				FEDAAF362306C7A100D0733E /* Length.swift in Sources */,
+				7A1B45FC248449E4000A70EC /* Sqrt.swift in Sources */,
 				FE343E7F231D29E20017E047 /* NamespaceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

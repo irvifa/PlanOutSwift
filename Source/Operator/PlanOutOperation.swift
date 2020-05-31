@@ -25,6 +25,8 @@ enum PlanOutOperation: String {
     case mod = "%"
     case divide = "/"
     case round
+    case exp
+    case sqrt
     case not
     case negative
     case min
@@ -71,6 +73,8 @@ enum PlanOutOperation: String {
         case .mod: return Mod()
         case .divide: return Divide()
         case .round: return Round()
+        case .exp: return Exp()
+        case .sqrt: return Sqrt()
         case .not: return Not()
         case .negative: return Negative()
         case .min: return Min()
